@@ -78,10 +78,34 @@ h1 {
   box-shadow: none;
 }
 
+.legacy-form-row {
+  border: none;
+  margin-bottom: 2.5rem;
+}
+
+.legacy-form-row legend {
+  margin-bottom: 1rem;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 0.9rem;
+  padding: 0 1.5rem 0 0.5rem;
+}
+
+.legacy-form-row input[type="radio"] {
+  margin-top: 0.2rem;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type="radio"] {
+  float: left;
+}
+
 @media only screen and (min-width: 700px) {
   .speaker-form-header,
   .speaker-form {
-    width: 600px;
+    width: 37.5rem;
   }
 
   .form-row {
@@ -95,15 +119,27 @@ h1 {
   .form-row input[type="email"],
   .form-row select,
   .form-row textarea {
-    width: 250px;
+    width: 15.5rem;
     height: initial;
   }
 
   .form-row label {
     text-align: right;
 
-    width: 120px;
+    width: 7.5rem;
     padding-right: 1.5rem;
     margin-top: 0.5rem;
+  }
+
+  .legacy-form-row {
+    margin-bottom: 0.5rem;
+  }
+
+  .legacy-form-row legend {
+    text-align: right;
+
+    width: 7.5rem;
+    padding-right: 1.5rem;
+    float: left;
   }
 }
