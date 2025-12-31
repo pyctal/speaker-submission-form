@@ -10,11 +10,12 @@
 }
 
 body {
-  color: #5d6063;
-  background-color: #eaedf0;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+
+  color: #5d6063;
+  background-color: #eaedf0;
 
   display: flex;
   flex-direction: column;
@@ -24,6 +25,7 @@ body {
 .speaker-form-header {
   text-align: center;
   background-color: var(--form-background-color);
+
   border: 1px solid var(--form-border-color);
   border-radius: 3px;
 
@@ -39,6 +41,7 @@ h1 {
 
 .speaker-form {
   background-color: var(--form-background-color);
+
   border: 1px solid var(--form-border-color);
   border-radius: 3px;
 
@@ -62,13 +65,14 @@ h1 {
 
 .form-row input[type="text"],
 .form-row input[type="email"] {
+  font-size: 0.9rem;
   background-color: #ffffff;
+
   border: 1px solid var(--form-border-color);
   border-radius: 3px;
 
   width: 100%;
   padding: 0.5rem;
-  font-size: 0.9rem;
 }
 
 .form-row input[type="text"]:invalid,
@@ -113,6 +117,7 @@ h1 {
 .form-row textarea {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
+
   border: 1px solid var(--form-border-color);
   border-radius: 3px;
 
@@ -131,6 +136,28 @@ h1 {
 
 .form-row .checkbox-label {
   margin-bottom: 0;
+}
+
+.form-row button {
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
 }
 
 @media only screen and (min-width: 700px) {
@@ -181,5 +208,9 @@ h1 {
   .form-row .checkbox-label {
     margin-left: 7.5rem;
     width: auto;
+  }
+
+  .form-row button {
+    margin-left: 7.5rem;
   }
 }
