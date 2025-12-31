@@ -34,7 +34,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .speaker-form {
@@ -68,4 +68,31 @@ h1 {
 
 .form-row label {
   margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .speaker-form-header,
+  .speaker-form {
+    width: 600px;
+  }
+
+  .form-row {
+    margin-bottom: 1.5rem;
+
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label {
+    text-align: right;
+
+    width: 120px;
+    padding-right: 1.5rem;
+    margin-top: 0.5rem;
+  }
 }
