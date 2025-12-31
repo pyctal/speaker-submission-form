@@ -46,3 +46,26 @@ h1 {
   padding: 3rem;
   margin: 0 0 2.5rem 0;
 }
+
+.form-row {
+  margin-bottom: 2.5rem;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"] {
+  background-color: #ffffff;
+  border: 1px solid var(--form-border-color);
+  border-radius: 3px;
+
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-row label {
+  margin-bottom: 1rem;
+}
