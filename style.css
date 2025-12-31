@@ -56,7 +56,12 @@ h1 {
   flex-wrap: wrap;
 }
 
-.form-row input[type="text"] {
+.form-row label {
+  margin-bottom: 1rem;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
   background-color: #ffffff;
   border: 1px solid var(--form-border-color);
   border-radius: 3px;
@@ -66,8 +71,11 @@ h1 {
   font-size: 0.9rem;
 }
 
-.form-row label {
-  margin-bottom: 1rem;
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid {
+  color: #d55c5f;
+  border: 1px solid #d55c5f;
+  box-shadow: none;
 }
 
 @media only screen and (min-width: 700px) {
@@ -83,7 +91,10 @@ h1 {
     align-items: flex-start;
   }
 
-  .form-row input[type="text"] {
+  .form-row input[type="text"],
+  .form-row input[type="email"],
+  .form-row select,
+  .form-row textarea {
     width: 250px;
     height: initial;
   }
