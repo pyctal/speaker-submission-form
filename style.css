@@ -129,6 +129,10 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.form-row .checkbox-label {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 700px) {
   .speaker-form-header,
   .speaker-form {
@@ -172,5 +176,10 @@ h1 {
 
   .form-row .instructions {
     margin-left: 7.5rem;
+  }
+
+  .form-row .checkbox-label {
+    margin-left: 7.5rem;
+    width: auto;
   }
 }
