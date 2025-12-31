@@ -1,3 +1,8 @@
+:root {
+  --form-background-color: #f6f7f8;
+  --form-border-color: #d6d9dc;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,8 +23,8 @@ body {
 
 .speaker-form-header {
   text-align: center;
-  background-color: #f6f7f8;
-  border: 1px solid #d6d9dc;
+  background-color: var(--form-background-color);
+  border: 1px solid var(--form-border-color);
   border-radius: 3px;
 
   width: 80%;
@@ -30,4 +35,14 @@ body {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.speaker-form {
+  background-color: var(--form-background-color);
+  border: 1px solid var(--form-border-color);
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 3rem;
+  margin: 0 0 2.5rem 0;
 }
