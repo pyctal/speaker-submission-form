@@ -94,7 +94,7 @@ h1 {
 .legacy-form-row .radio-label {
   display: block;
   font-size: 0.9rem;
-  padding: 0 1.5rem 0 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .legacy-form-row input[type="radio"] {
